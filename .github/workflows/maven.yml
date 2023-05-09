@@ -24,11 +24,10 @@ jobs:
           cd /home/runner/work/demo-java-login/demo-java-login/target/
           ls -l
     
-    - name: Build and Push Docker Image
-      uses: mr-smithers-excellent/docker-build-push@v4
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v3.1.2
       with:
-        registry: docker.io
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        image: ${{ secrets.IMAGE_NAME }}
+        name: my-artifact
+        path: demo-java-login/demo-java-login/target/dptweb-1.0.war
     
+
