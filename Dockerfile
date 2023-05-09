@@ -6,7 +6,7 @@ WORKDIR /app
 
 MAINTAINER "PR Reddy - DevOps-Realtime" 
 
-COPY  ./login.war /root/${dest_app_dir}/
+COPY   ./my_file.txt 
 
 COPY . .
 
