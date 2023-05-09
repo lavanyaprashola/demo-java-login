@@ -21,8 +21,8 @@ jobs:
       run: mvn clean install
     - name: find artifacrs
       run: |
-          cd /home/runner/work/demo-java-login/demo-java-login/target/dptweb-1.0.war
-          ls -l
+          cd /home/runner/work/demo-java-login
+          ls
     
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
