@@ -16,7 +16,11 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: maven
+    - name: Apache Maven Build Automation for Java Project 
+      uses: NishkarshRaj/Maven_Actions@0.1
     - name: Build with Maven
-      run: |
-          cd javaloginapp-main/JavaLogin/dptrealtime-java-login-app-f0d25bfa20c3
-          mvn clean install
+      run: mvn clean install
+    - name: Apache Maven Build Automation for Java Project 
+      uses: NishkarshRaj/Maven_Actions@0.1
+ 
+    
