@@ -17,8 +17,5 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: |
-         Cd /opt/java-login-app
-         /opt/java-login-app/apache-maven-3.8.5/bin/mvn package
- 
+      run: mvn clean install
     
