@@ -6,7 +6,7 @@ WORKDIR /app
 
 MAINTAINER "PR Reddy - DevOps-Realtime" 
 
-COPY ./my_file.txt  /usr/local/tomcat/webapps/login.war
+COPY ./home/runner/work/demo-java-login/demo-java-login/target/dptweb-1.0.war /usr/local/tomcat/webapps/dptweb-1.0.war
 
 COPY . .
 
