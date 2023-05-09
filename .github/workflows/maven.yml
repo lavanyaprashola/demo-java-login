@@ -17,4 +17,6 @@ jobs:
         distribution: 'adopt'
         cache: maven
     - name: Build with Maven
-      run: javaloginapp-main/javaloginapp-main/JavaLogin/dptrealtime-java-login-app-f0d25bfa20c3/dptrealtime-java-login-app-f0d25bfa20c3mvn clean install
+      run: |
+          cd javaloginapp-main/JavaLogin/dptrealtime-java-login-app-f0d25bfa20c3
+          mvn clean install
