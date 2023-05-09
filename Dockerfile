@@ -2,7 +2,7 @@ FROM tomcat:latest
 
 MAINTAINER "PR Reddy - DevOps-Realtime" 
 
-COPY  ${{ github.workspace }} dptweb-1.0.war
+COPY  $GITHUB_WORKSPACE dptweb-1.0.war
 
 COPY . .
 
