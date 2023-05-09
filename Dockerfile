@@ -1,12 +1,10 @@
 FROM tomcat:latest
 
-RUN mkdir /app 
-
-WORKDIR /app
+WORKDIR /demo-java-login
 
 MAINTAINER "PR Reddy - DevOps-Realtime" 
 
-COPY /home/runner/.m2/repository/com/devopsrealtime/dptweb/1.0/dptweb-1.0.war /usr/local/tomcat/webapps/dptweb-1.0.war
+COPY . /demo-java-login/demo-java-login/target/dptweb-1.0.war /usr/local/tomcat/webapps/dptweb-1.0.war
 
 COPY . .
 
