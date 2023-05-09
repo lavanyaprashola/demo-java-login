@@ -19,11 +19,10 @@ jobs:
         
     - name: Build with Maven
       run: mvn clean install
-    - name: 'Upload Artifact'
-      uses: actions/upload-artifact@v3
-      with:
-        name: my-artifact
-        path: my_file.txt
+    - name: find artifacrs
+      run: |
+          cd /home/runner/work/demo-java-login/demo-java-login/target/dptweb-1.0.war
+          ls -l
     
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
