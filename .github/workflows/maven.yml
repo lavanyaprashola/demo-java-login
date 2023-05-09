@@ -16,11 +16,9 @@ jobs:
         java-version: '11'
         distribution: 'adopt'
         cache: maven
-    - name: Apache Maven Build Automation for Java Project 
-      uses: NishkarshRaj/Maven_Actions@0.1
     - name: Build with Maven
-      run: mvn clean install
-    - name: Apache Maven Build Automation for Java Project 
-      uses: NishkarshRaj/Maven_Actions@0.1
+      run: |
+         Cd /opt/java-login-app
+         /opt/java-login-app/apache-maven-3.8.5/bin/mvn package
  
     
