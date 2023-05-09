@@ -3,7 +3,7 @@ FROM tomcat:latest
 
 MAINTAINER "PR Reddy - DevOps-Realtime" 
 
-COPY dptweb-1.0.war ./
+COPY ./login-release.war /usr/local/tomcat/webapps/login.war
 
 
 EXPOSE 8080
