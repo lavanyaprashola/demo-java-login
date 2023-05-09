@@ -28,6 +28,6 @@ jobs:
       uses: actions/upload-artifact@v3.1.2
       with:
         name: my-artifact
-        path: demo-java-login/demo-java-login/target/dptweb-1.0.war
+        path: /home/runner/work/demo-java-login/demo-java-login/target/dptweb-1.0.war
     
 
