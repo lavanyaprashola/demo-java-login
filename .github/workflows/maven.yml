@@ -21,8 +21,8 @@ jobs:
       run: mvn clean install
     - name: find artifacrs
       run: |
-          cd /home/runner/work/demo-java-login
-          ls
+          cd /home/runner/work/demo-java-login/demo-java-login/target/
+          ls -l
     
     - name: Build and Push Docker Image
       uses: mr-smithers-excellent/docker-build-push@v4
